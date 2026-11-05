@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Parceiros Burguês — hambúrguer artesanal feito na brasa em Pombal-PB. Sem luxo, pura excelência.">
+  <title>Parceiros Burguês | Sem luxo, pura excelência</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#inicio" aria-label="Parceiros Burguês">
+      <span class="logo-icon">🍔</span>
+      <span class="logo-type">PARCEIROS <b>BURGUÊS</b><small>SEM LUXO, PURA EXCELÊNCIA.</small></span>
+      <span class="flags">🇧🇷 🇨🇴</span>
+    </a>
+    <nav class="nav">
+      <a class="active" href="#inicio">Início</a>
+      <a href="#cardapio">Menu</a>
+      <a href="#sobre">Sobre nós</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <button class="cart-button" id="open-cart" aria-label="Abrir carrinho">🛒 <span id="cart-count">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <span class="eyebrow">POMBAL • PARAÍBA</span>
+        <p class="brand-overline">PARCEIROS BURGUÊS</p>
+        <h1>SEM LUXO,<br><em>PURA EXCELÊNCIA.</em></h1>
+        <p class="intro">Hambúrguer artesanal, feito na brasa 🔥 com ingredientes selecionados e muito sabor!</p>
+        <div class="hero-actions">
+          <a class="btn btn-red" href="#cardapio">🍔 Ver cardápio <span>›</span></a>
+          <a class="btn btn-outline" href="#contato">Pedir pelo WhatsApp</a>
+        </div>
+        <div class="handwritten">O verdadeiro sabor<br><b>em cada mordida!</b></div>
+      </div>
+      <div class="hero-photo" role="img" aria-label="Hambúrguer artesanal suculento com queijo, alface e pão com gergelim"></div>
+      <div class="hero-bottom"><span>🔥 FEITO NA BRASA</span><i></i><span>🇧🇷 + 🇨🇴 DUAS CULTURAS, UM SABOR</span></div>
+    </section>
+
+    <section class="menu-section" id="cardapio">
+      <div class="section-title"><span>♛</span><h2>Nosso <em>Menu</em></h2><span>♛</span></div>
+      <p class="section-subtitle">Hambúrgueres preparados com todo carinho!</p>
+      <div class="products">
+        <article class="product">
+          <div class="product-image image-one"></div>
+          <div class="product-info"><h3>Medellín</h3><p>Hambúrguer artesanal da casa.</p><strong>R$ 21,90</strong><button class="add" data-name="Medellín" data-price="21.90">🛒 Adicionar</button></div>
+        </article>
+        <article class="product">
+          <div class="product-image image-two"></div>
+          <div class="product-info"><h3>El Patrón</h3><p>Uma combinação especial da casa.</p><strong>R$ 23,90</strong><button class="add" data-name="El Patrón" data-price="23.90">🛒 Adicionar</button></div>
+        </article>
+        <article class="product">
+          <div class="product-image image-three"></div>
+          <div class="product-info"><h3>San Andrés</h3><p>Brioche, carne artesanal 120g na brasa, muçarela, abacaxi, cebola caramelizada, alface e molho da casa. Acompanha fritas e Coca-Cola 220ml.</p><strong>R$ 25,90</strong><button class="add" data-name="San Andrés" data-price="25.90">🛒 Adicionar</button></div>
+        </article>
+        <article class="product">
+          <div class="product-image image-four"></div>
+          <div class="product-info"><h3>Bogotá</h3><p>Hambúrguer artesanal da casa.</p><strong>R$ 26,90</strong><button class="add" data-name="Bogotá" data-price="26.90">🛒 Adicionar</button></div>
+        </article>
+      </div>
+      <p class="notice">* Consulte disponibilidade, adicionais e taxa de entrega pelo WhatsApp.</p>
+    </section>
+
+    <section class="qualities" id="sobre">
+      <div><span>🔥</span><b>Feito na brasa</b></div>
+      <div><span>✦</span><b>Ingredientes selecionados</b></div>
+      <div><span>🛵</span><b>Delivery em Pombal-PB</b></div>
+      <div><span>♛</span><b>Sem luxo, pura excelência</b></div>
+    </section>
+
+    <section class="contact" id="contato">
+      <span class="eyebrow">BATEU A FOME?</span>
+      <h2>Seu próximo burger<br><em>está te esperando.</em></h2>
+      <p>Monte seu pedido e envie diretamente para a gente pelo WhatsApp.</p>
+      <button class="btn btn-red big" id="checkout">Pedir pelo WhatsApp <span>›</span></button>
+      <small>Atendimento e entrega em Pombal-PB.</small>
+    </section>
+  </main>
+
+  <footer><a class="footer-logo" href="#inicio">🍔 PARCEIROS <b>BURGUÊS</b></a><span>© 2026 Parceiros Burguês • Pombal-PB</span><span>🇧🇷 🇨🇴</span></footer>
+
+  <div class="cart-backdrop" id="cart-backdrop">
+    <aside class="cart-panel" role="dialog" aria-modal="true" aria-label="Seu pedido">
+      <div class="cart-head"><h2>Seu pedido</h2><button id="close-cart" aria-label="Fechar">✕</button></div>
+      <div id="cart-items" class="cart-items"><p class="empty">Seu carrinho está vazio.</p></div>
+      <div class="cart-total"><span>Total</span><strong id="cart-total">R$ 0,00</strong></div>
+      <button class="btn btn-red checkout-btn" id="cart-checkout">Enviar pedido pelo WhatsApp</button>
+      <small>O pedido será enviado para confirmação. A taxa de entrega será informada no atendimento.</small>
+    </aside>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
